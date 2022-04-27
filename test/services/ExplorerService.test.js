@@ -11,6 +11,6 @@ describe("Unit test for Explorer Services", () =>
     {
         const ExplorerByMission = ExplorerService.getAmountOfExplorersByMission("explorers.json","node")
         expect(ExplorerByMission).toBe(10)
-        
+             
     })
 })
