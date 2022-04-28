@@ -19,7 +19,7 @@ describe("Test to fizzbuzz", ()=>
     })
     test("4. add the score value to to trick if the result of score%5 and the result of score%3  !=0", () =>
     {
-        const scoreest = FizzbuzzService.applyValidationInExplorer("explorers.json","Woopa1")
+        const scoreest = FizzbuzzService.applyValidationInExplorer("explorers.json","Woopa12")
         expect(scoreest.trick).toBe(scoreest.score)
     })
 })
