@@ -1,22 +1,22 @@
-const ExplorerService = require("./../../lib/services/ExplorerService")
+const ExplorerService = require("./../../lib/services/ExplorerService");
 
 describe("Unit test for Explorer Services", () =>
 {
     test("1. test to filter all the explorers by their mission", () =>
     {
-        const filterByNode = ExplorerService.filterByMission("explorers.json","node")
-        const ExplorersWithNode = filterByNode.forEach(expName => expect(expName.mission).toContain("node"))
-    })
+        const filterByNode = ExplorerService.filterByMission("explorers.json","node");
+        const ExplorersWithNode = filterByNode.forEach(expName => expect(expName.mission).toContain("node"));
+    });
     test("2. Get the amount of explorers by their mission", () =>
     {
-        const ExplorerByMission = ExplorerService.getAmountOfExplorersByMission("explorers.json","node")
-        expect(ExplorerByMission).toBe(10)
+        const ExplorerByMission = ExplorerService.getAmountOfExplorersByMission("explorers.json","node");
+        expect(ExplorerByMission).toBe(10);
              
-    })
+    });
 
     test("3. Get explorers usernames by their mission", () =>
     {
-        const explorersByName=ExplorerService.getExplorersUsernamesByMission("explorers.json","node")
-        console.log(explorersByName)
-    })
-})
+        const explorersByName=ExplorerService.getExplorersUsernamesByMission("explorers.json","node");
+        console.log(explorersByName);
+    });
+});
