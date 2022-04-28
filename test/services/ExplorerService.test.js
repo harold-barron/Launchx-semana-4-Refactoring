@@ -16,7 +16,7 @@ describe("Unit test for Explorer Services", () =>
 
     test("3. Get explorers usernames by their mission", () =>
     {
-       const explorersByName=ExplorerService.getExplorersUsernamesByMission("explorers.json","node")
-       const ExplorersNames = explorersByName.forEach(expName => expect(expName).toContain("name"))
+        const explorersByName=ExplorerService.getExplorersUsernamesByMission("explorers.json","node")
+        console.log(explorersByName)
     })
 })
