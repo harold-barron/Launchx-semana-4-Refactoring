@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/harold-barron/Launchx-semana-4-Refactoring#readme",
   "devDependencies": {
-    "jest": "^28.0.2"
+    "jest": "^26.0.0"
   }
 }
